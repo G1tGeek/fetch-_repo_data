@@ -1,0 +1,21 @@
+$ python3 fetch.py
+[2026-01-07 16:17:50] Loading configuration
+[2026-01-07 16:17:50] Fetching repositories
+[2026-01-07 16:17:51] [1/5] Processing repo: opstree-iaac
+[2026-01-07 16:17:54] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/opstree-iaac/downloads
+[2026-01-07 16:17:55] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/opstree-iaac/access-tokens
+[2026-01-07 16:17:58] [2/5] Processing repo: olly
+[2026-01-07 16:18:01] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/olly/downloads
+[2026-01-07 16:18:02] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/olly/access-tokens
+[2026-01-07 16:18:04] [3/5] Processing repo: rems
+[2026-01-07 16:18:08] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/rems/downloads
+[2026-01-07 16:18:09] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/rems/access-tokens
+[2026-01-07 16:18:11] [4/5] Processing repo: sre
+[2026-01-07 16:18:14] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/sre/downloads
+[2026-01-07 16:18:15] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/sre/access-tokens
+[2026-01-07 16:18:18] [5/5] Processing repo: defalut-branch-testing
+[2026-01-07 16:18:22] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/defalut-branch-testing/downloads
+[2026-01-07 16:18:24] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/defalut-branch-testing/access-tokens
+[2026-01-07 16:18:26] Writing CSV
+[2026-01-07 16:18:26] Generating Excel
+[2026-01-07 16:18:26] Done ✅ CSV: pinelabs_bitbucket_inventory.csv, Excel: pinelabs_bitbucket_inventory.xlsx
