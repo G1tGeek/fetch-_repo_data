@@ -123,7 +123,45 @@ pipeline {
 
 ---
 
-## 5. Claude vs Ollama – Detailed Comparison
+## 5. Feature Comparison: Claude vs Ollama in Jenkins
+
+| Feature                  | Claude (Anthropic)                      | Ollama (Local LLM)                               |
+| ------------------------ | --------------------------------------- | ------------------------------------------------ |
+| Model Management         | Fully managed by vendor                 | Manually managed (pull, update, version control) |
+| Model Upgrades           | Automatic, no downtime                  | Manual, requires planning                        |
+| API Interface            | HTTPS REST API                          | Local HTTP API                                   |
+| Prompt Structure Support | System + user roles, structured prompts | Prompt-only, limited role separation             |
+| Long Log Handling        | Excellent (large context windows)       | Limited by model memory                          |
+| Response Consistency     | High and predictable                    | Varies by model and tuning                       |
+| Structured Output (JSON) | Strong adherence                        | Best-effort, less reliable                       |
+| Latency                  | Low and consistent                      | Depends on CPU/GPU load                          |
+| Retry & Throttling       | Rate-limited by provider                | Fully controlled internally                      |
+| Offline Capability       | Not supported                           | Fully supported                                  |
+| Vendor SLA               | Available                               | Not applicable (self-managed)                    |
+| Custom Model Fine-tuning | Not exposed                             | Possible (model-dependent)                       |
+
+---
+
+## 6. Real-World Jenkins Use Case Comparison
+
+| Jenkins Use Case                       | Claude (Anthropic) | Ollama (Local LLM) |
+| -------------------------------------- | ------------------ | ------------------ |
+| Build Failure Root Cause Analysis      | Highly effective   | Effective          |
+| Large Log Summarization (200+ lines)   | Strong             | Moderate           |
+| Multi-step Failure Reasoning           | Strong             | Limited            |
+| Automated Code Review (Diff Analysis)  | Strong             | Moderate           |
+| Security Scan Explanation (Snyk/Trivy) | Strong             | Good               |
+| Release Notes Generation               | Strong             | Moderate           |
+| RCA Reports for Management             | Excellent          | Adequate           |
+| High-Frequency CI Jobs                 | Cost-sensitive     | Ideal              |
+| Sensitive / Regulated Data Pipelines   | Not recommended    | Recommended        |
+| Air-Gapped Jenkins Environments        | Not supported      | Fully supported    |
+| Developer Productivity Assist          | High impact        | Medium impact      |
+| Cost-Controlled Bulk Analysis          | Moderate           | Strong             |
+
+---
+
+## 7. Claude vs Ollama – Detailed Comparison
 
 | Dimension | Claude (Anthropic) | Ollama (Local LLM) |
 |--------|-------------------|------------------|
@@ -139,7 +177,7 @@ pipeline {
 
 ---
 
-## 6. Cost Comparison
+## 8. Cost Comparison
 
 ### Claude (Example – Sonnet)
 - ~500 input + 500 output tokens
@@ -153,7 +191,7 @@ pipeline {
 
 ---
 
-## 7. Security Best Practices
+## 9. Security Best Practices
 
 ### Common
 - Never send secrets, tokens, or private keys
@@ -170,7 +208,7 @@ pipeline {
 
 ---
 
-## 8. Recommended Hybrid Pattern
+## 10. Recommended Hybrid Pattern
 
 Use **both**:
 
@@ -188,7 +226,7 @@ Fallback logic:
 
 ---
 
-## 9. Troubleshooting
+## 11. Troubleshooting
 
 | Error | Cause |
 |----|----|
@@ -199,7 +237,7 @@ Fallback logic:
 
 ---
 
-## 10. Final Checklist
+## 12. Final Checklist
 
 - Jenkins credentials configured
 - Logs truncated
@@ -209,7 +247,7 @@ Fallback logic:
 
 ---
 
-## 11. Conclusion
+## 13. Conclusion
 
 - **Claude** delivers best-in-class reasoning with minimal ops effort.
 - **Ollama** offers privacy, offline usage, and cost predictability.
@@ -217,4 +255,3 @@ Fallback logic:
 
 ---
 
-Prepared for production Jenkins environments.
