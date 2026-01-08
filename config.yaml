@@ -1,0 +1,8 @@
+bitbucket:
+  workspace: opstree-pinelabs
+  base_url: https://api.bitbucket.org/2.0
+  email: yuvraj.singh@mygurukulam.co
+
+output:
+  csv_file: pinelabs_bitbucket_inventory.csv
+
