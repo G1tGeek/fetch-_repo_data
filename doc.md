@@ -1,8 +1,7 @@
 
 # Claude vs Ollama AI Integration with Jenkins
-## Production-Ready README & POC Guide
 
-This repository provides a **complete, production-grade Proof of Concept (POC)** for integrating **AI models into Jenkins CI/CD pipelines**, covering both:
+This guide provides a **complete, production-grade Proof of Concept (POC)** for integrating **AI models into Jenkins CI/CD pipelines**, covering both:
 
 - **Claude (Anthropic – Cloud-hosted LLM API)**
 - **Ollama (Self-hosted / Local LLM runtime)**
