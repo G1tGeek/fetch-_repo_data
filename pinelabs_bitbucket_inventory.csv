@@ -9,8 +9,12 @@ opstree-pinelabs,K8s,olly,main,"1. Saurabh-Khan/valuesyaml-created-online-with-b
 2. feature/victoria-metcrics
 3. main
 4. release/values.yml",,,,1. Yuvraj Singh:admin,,,
-opstree-pinelabs,K8s,rems,main,"1. feature/remsv1.24
-2. main",,,,1. Saurabh Khan:admin,,,
+opstree-pinelabs,K8s,rems,main,"1. bugfix/nsdsd
+2. feature/remsv1.24
+3. feature/v.4.5
+4. feature/v1.33
+5. hotfix/vv222
+6. main",,1. 4.5,1. 4.5,1. Saurabh Khan:admin,,,
 opstree-pinelabs,K8s,sre,main,1. main,,,,,,,
 opstree-pinelabs,Opstree-IAaC,defalut-branch-testing,test,"1. bugfix/v1.4
 2. feature/deployment

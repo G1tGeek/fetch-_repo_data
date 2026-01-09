@@ -1,0 +1,21 @@
+[2026-01-09 11:24:05] [INFO] Starting Bitbucket Inventory Job
+[2026-01-09 11:24:05] [INFO] Loading configuration
+[2026-01-09 11:24:05] [INFO] Fetching repositories
+[2026-01-09 11:24:06] [INFO] [1/5] Processing repo: opstree-iaac
+[2026-01-09 11:24:08] [WARN] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/opstree-iaac/downloads
+[2026-01-09 11:24:09] [WARN] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/opstree-iaac/access-tokens
+[2026-01-09 11:24:11] [INFO] [2/5] Processing repo: olly
+[2026-01-09 11:24:14] [WARN] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/olly/downloads
+[2026-01-09 11:24:15] [WARN] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/olly/access-tokens
+[2026-01-09 11:24:16] [INFO] [3/5] Processing repo: rems
+[2026-01-09 11:24:19] [WARN] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/rems/downloads
+[2026-01-09 11:24:20] [WARN] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/rems/access-tokens
+[2026-01-09 11:24:22] [INFO] [4/5] Processing repo: sre
+[2026-01-09 11:24:24] [WARN] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/sre/downloads
+[2026-01-09 11:24:25] [WARN] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/sre/access-tokens
+[2026-01-09 11:24:27] [INFO] [5/5] Processing repo: defalut-branch-testing
+[2026-01-09 11:24:29] [WARN] 402 skipped (plan restriction): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/defalut-branch-testing/downloads
+[2026-01-09 11:24:30] [WARN] 404 skipped (feature not enabled): https://api.bitbucket.org/2.0/repositories/opstree-pinelabs/defalut-branch-testing/access-tokens
+[2026-01-09 11:24:32] [INFO] Writing CSV
+[2026-01-09 11:24:32] [INFO] Generating Excel
+[2026-01-09 11:24:32] [INFO] Done ✅ CSV: pinelabs_bitbucket_inventory.csv, Excel: pinelabs_bitbucket_inventory.xlsx
