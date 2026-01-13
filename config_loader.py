@@ -1,15 +1,29 @@
+import os
 import yaml
 from logger import log
 
 
-def load_config(config_file="config.yaml", token_file="api_token"):
+def load_config(config_file="config.yaml", token_env="BITBUCKET_API_TOKEN"):
+    """
+    Loads application configuration and reads Bitbucket API token
+    from an environment variable.
+
+    Required ENV:
+      BITBUCKET_API_TOKEN
+    """
+
     log("Loading configuration")
 
+    # Load YAML config
     with open(config_file) as f:
         config = yaml.safe_load(f)
 
-    with open(token_file) as f:
-        api_token = f.read().strip()
+    # Read API token from environment variable
+    api_token = os.getenv(token_env)
+    if not api_token:
+        raise RuntimeError(
+            f"Missing required environment variable: {token_env}"
+        )
 
     bitbucket = config["bitbucket"]
     output = config["output"]
